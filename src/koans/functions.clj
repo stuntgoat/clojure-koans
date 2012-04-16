@@ -22,8 +22,7 @@
             4 5))))
 
   "Higher-order functions take function arguments"
-  (= 25 (___
-         (fn [n] (* n n))))
+  (= 25 ((fn [n] (* n n)) __ ))
 
   "But they are often better written using the names of functions"
   (= 25 (___ square)))
